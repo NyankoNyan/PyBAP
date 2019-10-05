@@ -19,4 +19,4 @@ def run_file(filename):
         file_.close()
         raise FileOpenError(filename)
 
-run_file('../test_codes/first_file_test.abap')
+

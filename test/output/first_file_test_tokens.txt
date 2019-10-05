@@ -1,0 +1,83 @@
+command:
+	word	data
+	space	
+	space	
+	word	i
+	space	
+	word	type
+	space	
+	word	i
+command:
+	word	data
+	space	
+	word	i1
+	space	
+	word	type
+	space	
+	word	i
+command:
+	word	data
+	space	
+	word	i2
+	space	
+	word	type
+	space	
+	word	i
+command:
+	space	
+	word	i1
+	space	
+	word	=
+	space	
+	word	1
+command:
+	space	
+	word	i2
+	space	
+	word	=
+	space	
+	word	2
+command:
+	space	
+	word	i
+	space	
+	word	=
+	space	
+	word	i1
+	space	
+	word	+
+	space	
+	word	i2
+command:
+	space	
+	word	write
+	space	
+	space	
+	word	i1
+command:
+	space	
+	word	write
+	space	
+	charstr	+
+command:
+	space	
+	word	write
+	space	
+	word	i2
+command:
+	space	
+	word	write
+	space	
+	charstr	=
+command:
+	space	
+	word	write
+	space	
+	word	i
+command:
+	space	
+	word	write
+	space	
+	word	/
+	space	
+	charstr	Готовьте ваши сраки — код пишут макаки

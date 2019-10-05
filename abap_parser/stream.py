@@ -11,7 +11,26 @@ from name_parser import NameParserStructComp
 from upper_case_parser import UpperCaseParser
 from command_parser import CommandParserDefault
 from execution.statement import ExecutionStatement
+from stream_parser import StreamParser
 
+
+class ParserStack(StreamParser):
+    
+    def __init__(self, parsers):
+        StreamParser.__init__(self)
+        self._parsers = parsers
+        for i in range(0, len(self._parsers) - 1):
+            self._parsers[i+1].set_source(self._parsers[i])
+        
+    def get_next(self):
+        return self._parsers[-1].get_next()
+    
+    def set_source(self, in_source):
+        self._parsers[0].set_source(in_source)
+        
+    def get_output_type(self):
+        return self._parsers[-1].get_output_type()
+        
     
 class StringSourceTest():
     def test1(self):
